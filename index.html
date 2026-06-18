@@ -1,145 +1,332 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>郑州市惠琴软件开发有限公司 — AI驱动效率创新</title>
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans SC",sans-serif;color:#1a1a2e;line-height:1.6;background:#fff}
-.container{max-width:1100px;margin:0 auto;padding:0 24px}
-header{background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);color:#fff;padding:80px 0;text-align:center}
-header h1{font-size:2.8rem;font-weight:700;margin-bottom:12px;letter-spacing:-0.5px}
-header p{font-size:1.25rem;opacity:.85;max-width:600px;margin:0 auto}
-.logo{font-size:1.1rem;font-weight:600;letter-spacing:1px;opacity:.7;margin-bottom:24px}
-.tagline{display:flex;justify-content:center;gap:32px;margin-top:32px;flex-wrap:wrap}
-.tagline span{background:rgba(255,255,255,.1);padding:8px 20px;border-radius:20px;font-size:.9rem}
-nav{background:#fff;border-bottom:1px solid #eaeaea;position:sticky;top:0;z-index:100}
-nav .container{display:flex;justify-content:space-between;align-items:center;height:60px}
-nav .brand{font-weight:700;font-size:1.1rem;color:#302b63}
-nav a{color:#555;text-decoration:none;margin-left:24px;font-size:.9rem;transition:color .2s}
-nav a:hover{color:#302b63}
-section{padding:80px 0}
-section h2{font-size:2rem;font-weight:700;margin-bottom:16px;color:#0f0c29}
-section h3{font-size:1.1rem;color:#666;margin-bottom:40px;font-weight:400}
-.product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
-.product-card{background:#f8f9fd;border-radius:12px;padding:32px;transition:transform .2s,box-shadow .2s}
-.product-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.08)}
-.product-card .icon{font-size:2rem;margin-bottom:16px}
-.product-card h3{font-size:1.15rem;color:#0f0c29;margin-bottom:8px;font-weight:600}
-.product-card p{color:#666;font-size:.9rem;line-height:1.7}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-.about-grid .label{font-size:.8rem;color:#999;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
-.about-grid .value{font-size:1rem;color:#333;margin-bottom:16px}
-.contact-info{background:#f8f9fd;border-radius:12px;padding:40px}
-.contact-info p{margin-bottom:8px;color:#555}
-.contact-info strong{color:#0f0c29}
-footer{background:#0f0c29;color:rgba(255,255,255,.6);padding:40px 0;font-size:.85rem;text-align:center}
-footer span{display:block;margin-bottom:4px}
-footer .icp{color:rgba(255,255,255,.4)}
-.badge{display:inline-block;background:#302b63;color:#fff;padding:4px 12px;border-radius:12px;font-size:.75rem;margin-left:8px}
-@media(max-width:768px){
-  header h1{font-size:2rem}
-  .about-grid{grid-template-columns:1fr}
-  .tagline{gap:12px}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="郑州市惠琴软件开发有限公司 - 专业AI技术应用与软件解决方案提供商">
+    <title>郑州市惠琴软件开发有限公司 - 官方网站</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+        header .tagline {
+            font-size: 1.2em;
+            color: #a0d2eb;
+            font-weight: 300;
+        }
+        nav {
+            background: #0f3460;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: #a0d2eb; }
+        section {
+            background: white;
+            margin: 30px 0;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #1a1a2e;
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #e94560;
+        }
+        h3 {
+            color: #0f3460;
+            font-size: 1.3em;
+            margin: 25px 0 15px;
+        }
+        .intro-text {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .product-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #e94560;
+        }
+        .product-card h3 {
+            color: #1a1a2e;
+            margin-top: 0;
+        }
+        .product-card p {
+            color: #666;
+            margin-top: 10px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .feature {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .feature h4 {
+            color: #0f3460;
+            margin-bottom: 10px;
+        }
+        .cert-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+        .cert-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+        .cert-list li:last-child { border-bottom: none; }
+        .cert-label { color: #666; font-weight: 500; }
+        .cert-value { color: #333; }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .contact-item {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .contact-item strong {
+            display: block;
+            color: #0f3460;
+            margin-bottom: 8px;
+        }
+        footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        footer p {
+            margin: 5px 0;
+            color: #888;
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8em; }
+            section { padding: 30px 20px; }
+            nav ul { gap: 20px; }
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>郑州市惠琴软件开发有限公司</h1>
+            <p class="tagline">Zhengzhou Huiqin Software Development Co., Ltd.</p>
+            <p style="margin-top: 15px; color: #ccc;">专业AI技术应用与软件解决方案提供商</p>
+        </div>
+    </header>
 
-<nav>
-  <div class="container">
-    <div class="brand">惠琴软件</div>
-    <div>
-      <a href="#products">产品</a>
-      <a href="#about">关于</a>
-      <a href="#contact">联系</a>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">关于我们</a></li>
+                <li><a href="#products">产品服务</a></li>
+                <li><a href="#solutions">解决方案</a></li>
+                <li><a href="#qualifications">企业资质</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="about">
+            <h2>关于我们</h2>
+            <p class="intro-text">
+                郑州市惠琴软件开发有限公司成立于2026年5月，是一家专注于人工智能技术应用与软件开发的科技创新型企业。公司总部位于河南省郑州市郑东新区核心商务区，致力于为企业与个人用户提供智能化、高效率的数字化解决方案。
+            </p>
+            <p class="intro-text">
+                我们拥有一支经验丰富的技术团队，深耕人工智能、云计算、移动应用开发等前沿领域。公司秉承"技术创新、服务至上"的经营理念，通过自主研发的核心技术产品，帮助用户实现数字化转型，提升工作效率与生活品质。
+            </p>
+            <p class="intro-text">
+                截至目前，公司已开发并运营多款互联网产品，累计服务用户超过10万人次。我们的产品涵盖AI文档处理、智能教育、多媒体创作等多个领域，形成了完整的产品生态体系。
+            </p>
+            
+            <h3>核心业务领域</h3>
+            <div class="features">
+                <div class="feature">
+                    <h4>人工智能应用</h4>
+                    <p>基于大语言模型与深度学习技术，开发智能问答、内容生成、图像识别等AI应用产品。</p>
+                </div>
+                <div class="feature">
+                    <h4>软件开发服务</h4>
+                    <p>为企业客户提供定制化软件开发、系统集成、技术咨询等全方位技术服务。</p>
+                </div>
+                <div class="feature">
+                    <h4>移动应用开发</h4>
+                    <p>专注于iOS与Android平台应用开发，打造用户体验优秀的移动端产品。</p>
+                </div>
+                <div class="feature">
+                    <h4>云计算服务</h4>
+                    <p>提供云端部署、服务器运维、数据存储等云计算基础设施服务。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>产品与服务</h2>
+            <div class="products">
+                <div class="product-card">
+                    <h3>万能掌柜</h3>
+                    <p>一站式AI文档处理平台，支持智能生成PPT、Word、Excel文档，图片与视频AI编辑，语音识别与处理等功能，大幅提升办公效率。</p>
+                </div>
+                <div class="product-card">
+                    <h3>猫咪老师</h3>
+                    <p>面向中小学生的AI智能学习助手，提供教材讲解、拍照解题、语音答疑等功能，让学习更加高效有趣。</p>
+                </div>
+                <div class="product-card">
+                    <h3>企业定制开发</h3>
+                    <p>为企业提供专属软件定制开发服务，包括管理系统、业务平台、移动应用等，满足个性化业务需求。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="solutions">
+            <h2>技术能力</h2>
+            <p class="intro-text">公司拥有完整的技术研发体系，具备从前端开发、后端架构到人工智能应用的全栈技术能力。</p>
+            
+            <h3>技术栈与能力</h3>
+            <div class="features">
+                <div class="feature">
+                    <h4>前端技术</h4>
+                    <p>React、Vue、Flutter、微信小程序、iOS原生开发</p>
+                </div>
+                <div class="feature">
+                    <h4>后端技术</h4>
+                    <p>Node.js、Python、Go、云函数、微服务架构</p>
+                </div>
+                <div class="feature">
+                    <h4>人工智能</h4>
+                    <p>大语言模型应用、计算机视觉、自然语言处理、语音识别</p>
+                </div>
+                <div class="feature">
+                    <h4>云服务</h4>
+                    <p>腾讯云、阿里云、GitHub、CI/CD自动化部署</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="qualifications">
+            <h2>企业资质与认证</h2>
+            <p class="intro-text">公司依法合规经营，已取得多项资质认证，确保为用户提供合法、安全、可靠的产品与服务。</p>
+            <ul class="cert-list">
+                <li>
+                    <span class="cert-label">企业名称</span>
+                    <span class="cert-value">郑州市惠琴软件开发有限公司</span>
+                </li>
+                <li>
+                    <span class="cert-label">统一社会信用代码</span>
+                    <span class="cert-value">91410100MAKERWB43C</span>
+                </li>
+                <li>
+                    <span class="cert-label">公司类型</span>
+                    <span class="cert-value">有限责任公司（自然人独资）</span>
+                </li>
+                <li>
+                    <span class="cert-label">成立日期</span>
+                    <span class="cert-value">2026年05月26日</span>
+                </li>
+                <li>
+                    <span class="cert-label">注册资本</span>
+                    <span class="cert-value">壹拾万圆整</span>
+                </li>
+                <li>
+                    <span class="cert-label">ICP备案号</span>
+                    <span class="cert-value">豫ICP备2026025455号</span>
+                </li>
+                <li>
+                    <span class="cert-label">邓白氏编码</span>
+                    <span class="cert-value">DUNS 585885949</span>
+                </li>
+                <li>
+                    <span class="cert-label">法定代表人</span>
+                    <span class="cert-value">陈惠明</span>
+                </li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>联系我们</h2>
+            <p class="intro-text">如有业务合作意向或产品咨询，欢迎通过以下方式与我们联系。</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>公司地址</strong>
+                    河南自贸试验区郑州片区（郑东）商务内环路海逸名门22号楼一单元1403
+                </div>
+                <div class="contact-item">
+                    <strong>电子邮箱</strong>
+                    chenhuiming@wnzgai.com
+                </div>
+                <div class="contact-item">
+                    <strong>官方网站</strong>
+                    www.wnzgai.com
+                </div>
+                <div class="contact-item">
+                    <strong>工作时间</strong>
+                    周一至周五 9:00-18:00
+                </div>
+            </div>
+        </section>
     </div>
-  </div>
-</nav>
 
-<header>
-  <div class="logo">ZHENGZHOU HUIQIN SOFTWARE</div>
-  <h1>AI驱动效率创新</h1>
-  <p>郑州市惠琴软件开发有限公司致力于人工智能技术应用，打造面向企业与个人的智能生产力工具</p>
-  <div class="tagline">
-    <span>🤖 AI技术</span>
-    <span>📱 微信小程序</span>
-    <span>☁️ 云计算</span>
-    <span>🔗 多平台应用</span>
-  </div>
-</header>
-
-<section id="products">
-  <div class="container">
-    <h2>核心产品</h2>
-    <h3>我们聚焦AI应用层，为用户提供开箱即用的智能工具</h3>
-    <div class="product-grid">
-      <div class="product-card">
-        <div class="icon">🪄</div>
-        <h3>AI万能掌柜 <span class="badge">微信小程序</span></h3>
-        <p>一站式AI智能办公平台。支持AI图片生成与编辑、AI视频生成与剪辑、PPT/Word/Excel智能创作、AI代码生成、语音转文字、PDF处理等21项功能，内置积分与VIP会员系统。</p>
-      </div>
-      <div class="product-card">
-        <div class="icon">🐱</div>
-        <h3>猫咪老师</h3>
-        <p>面向K-12学生的AI教育辅导应用。支持11学科、3200+课文的精准定位讲解，拍照解题、语音问答，以趣味角色驱动学习体验。</p>
-      </div>
-      <div class="product-card">
-        <div class="icon">📄</div>
-        <h3>AI文档协作平台</h3>
-        <p>智能文档转换与处理服务，支持Office文档在线编辑、格式互转、批量处理，面向企业文档自动化场景。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="about" style="background:#f8f9fd">
-  <div class="container">
-    <h2>关于我们</h2>
-    <h3>以技术驱动效率，用AI赋能未来</h3>
-    <div class="about-grid">
-      <div>
-        <div class="label">公司全称</div>
-        <div class="value">郑州市惠琴软件开发有限公司</div>
-        <div class="label">英文名称</div>
-        <div class="value">Zhengzhou Huiqin Software Development Co., Ltd.</div>
-        <div class="label">统一社会信用代码</div>
-        <div class="value">91410100MAKERWB43C</div>
-        <div class="label">邓白氏编码</div>
-        <div class="value">585885949</div>
-      </div>
-      <div>
-        <div class="label">主营方向</div>
-        <div class="value">人工智能应用软件开发、微信生态工具、跨平台移动应用</div>
-        <div class="label">技术栈</div>
-        <div class="value">WeChat Mini Program / Flutter / Node.js / 腾讯云CloudBase / 火山引擎ARK / 阿里云DashScope</div>
-        <div class="label">ICP备案</div>
-        <div class="value">豫ICP备2026025455号</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container">
-    <h2>联系我们</h2>
-    <h3>期待与您沟通合作</h3>
-    <div class="contact-info">
-      <p>📧 <strong>企业邮箱：</strong>chenhuiming@wnzgai.com</p>
-      <p>🌐 <strong>官方网站：</strong>https://www.wnzgai.com</p>
-      <p>🏢 <strong>公司地址：</strong>郑州市金水区</p>
-      <p>🏦 <strong>对公账户：</strong>浦发银行郑州金水支行 76080078801100004576</p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <span>郑州市惠琴软件开发有限公司 &copy; 2026</span>
-    <span class="icp">豫ICP备2026025455号</span>
-  </div>
-</footer>
-
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 郑州市惠琴软件开发有限公司 版权所有</p>
+            <p>豫ICP备2026025455号 | 地址：河南省郑州市郑东新区商务内环路海逸名门22号楼一单元1403</p>
+        </div>
+    </footer>
 </body>
 </html>
