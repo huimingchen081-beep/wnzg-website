@@ -8,65 +8,155 @@
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; color: #333; line-height: 1.8; }
   h1 { color: #FF8C42; font-size: 24px; border-bottom: 2px solid #FF8C42; padding-bottom: 10px; }
   h2 { color: #555; font-size: 18px; margin-top: 30px; }
+  h3 { color: #666; font-size: 16px; margin-top: 20px; }
   p, li { font-size: 15px; }
+  .highlight-box { background: #FFF8E1; border-left: 4px solid #FF8C42; padding: 16px 20px; margin: 16px 0; border-radius: 4px; }
+  .highlight-box p { margin: 6px 0; }
+  .data-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  .data-table th { background: #FFF3E0; color: #E65100; padding: 10px 12px; text-align: left; font-weight: 600; }
+  .data-table td { padding: 10px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+  .data-table tr:hover { background: #FFFAF0; }
   .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; color: #999; font-size: 13px; }
+  strong { color: #333; }
 </style>
 </head>
 <body>
 <h1>猫咪老师 - 隐私政策</h1>
-<p><strong>更新日期：2026年6月25日</strong></p>
+<p><strong>更新日期：2026年7月4日</strong></p>
 <p><strong>生效日期：2026年6月25日</strong></p>
 
 <p>郑州市惠琴软件开发有限公司（以下简称"我们"）深知个人信息对您的重要性。我们致力于保护您在使用"猫咪老师"App（以下简称"本应用"）时的隐私和数据安全。本隐私政策旨在向您说明我们如何收集、使用、存储和保护您的个人信息。</p>
 
+<!-- ====== 重点：AI数据共享声明 ====== -->
+<div class="highlight-box">
+  <h3 style="color:#E65100;margin-top:0;">📌 重要提示 — 关于第三方AI服务的数据共享</h3>
+  <p><strong>本应用的AI功能（智能问答、拍照解题、语音输入、语音播报等）由第三方AI服务提供商提供技术支持。</strong>在使用这些功能前，应用会以弹窗形式明确告知您将要发送的数据类型、数据接收方，并获得您的明确同意。您也可以在下方「四、第三方AI数据共享」部分了解详细信息。</p>
+</div>
+
 <h2>一、我们收集的信息</h2>
-<p><strong>1.1 必要信息</strong></p>
+
+<p><strong>1.1 设备与必要信息</strong></p>
 <ul>
   <li><strong>设备信息</strong>：设备型号、操作系统版本、唯一设备标识符，用于保障服务正常运行和优化用户体验。</li>
   <li><strong>积分数据</strong>：您的积分余额和使用记录，用于提供AI服务计费功能。</li>
-  <li><strong>学习记录</strong>：您选择的教材版本、学期、单元、课文信息，用于提供个性化的AI讲课服务。</li>
+  <li><strong>学习记录</strong>：您选择的教材版本、学期、单元、课文信息，以及年级和学科偏好，用于提供个性化的AI教学服务。</li>
 </ul>
 
 <p><strong>1.2 功能所需权限</strong></p>
 <ul>
-  <li><strong>相机权限</strong>：仅在您使用"拍照解题"功能时请求，用于拍摄题目照片。照片仅用于AI识别题目内容，不会保存到我们的服务器。</li>
-  <li><strong>麦克风权限</strong>：仅在您使用"语音输入"功能时请求，用于将语音转换为文字。录音数据仅用于语音识别，不会保存到我们的服务器。</li>
+  <li><strong>相机权限</strong>：仅在您主动使用"拍照解题"功能时请求，用于拍摄题目照片。</li>
+  <li><strong>麦克风权限</strong>：仅在您主动使用"语音输入"功能时请求，用于录制语音并转换为文字。</li>
   <li><strong>存储权限</strong>：用于缓存AI生成的内容和语音合成文件，以提升使用体验。</li>
 </ul>
 
-<h2>二、我们如何使用信息</h2>
+<h2>二、信息的存储与安全</h2>
 <ul>
-  <li><strong>提供AI服务</strong>：我们将您的问题、照片或语音发送给AI模型（阿里云DashScope）进行处理，以生成回答、讲解内容或解题结果。</li>
-  <li><strong>积分管理</strong>：记录您的积分获取和消耗，确保服务的正常计费。</li>
-  <li><strong>服务优化</strong>：分析应用使用情况，改进产品功能和用户体验。</li>
-</ul>
-
-<h2>三、信息的存储与安全</h2>
-<ul>
-  <li>您的积分数据和学习设置存储在您的设备本地（SharedPreferences）。</li>
-  <li>AI对话内容通过加密通道（HTTPS）传输至AI服务商，我们不对对话内容进行服务器端存储。</li>
+  <li>您的积分数据和学习设置存储在<strong>您的设备本地</strong>（SharedPreferences），不会上传至我们的服务器。</li>
+  <li>我们<strong>不建立自己的用户服务器</strong>，不收集账号密码，不要求登录注册。所有数据仅存于您的设备上。</li>
+  <li>发送给第三方AI服务器的数据通过<strong>加密通道（HTTPS）</strong>传输。</li>
   <li>我们采取合理的技术措施保护您的个人信息安全。</li>
 </ul>
 
-<h2>四、第三方服务</h2>
-<p>本应用使用以下第三方服务，其隐私政策请参考对应平台：</p>
+<!-- ====== 核心：第三方AI数据共享详细说明 ====== -->
+<h2>四、第三方AI数据共享（重要） ⭐</h2>
+
+<div class="highlight-box">
+  <p style="font-weight:600;color:#E65100;margin-top:0;">⚠️ 本章节是Apple审核要求的重点披露内容，请仔细阅读</p>
+</div>
+
+<h3>4.1 我们使用的第三方AI服务</h3>
+<table class="data-table">
+  <tr>
+    <th style="width:30%;">服务名称</th>
+    <td>阿里云 DashScope 百炼平台（阿里巴巴集团旗下）</td>
+  </tr>
+  <tr>
+    <th>提供服务</th>
+    <td>大语言模型（qwen3.7-plus）、视觉识别模型（qwen-vl-max）、语音识别（Paraformer）、语音合成（CosyVoice）</td>
+  </tr>
+  <th>官方网址</th>
+    <td><a href="https://dashscope.console.aliyun.com/">https://dashscope.console.aliyun.com/</a></td>
+  </tr>
+  <tr>
+    <th>隐私政策</th>
+    <td><a href="https://help.aliyun.com/document_detail/dashscope/agreements.html">阿里云DashScope隐私政策</a></td>
+  </tr>
+</table>
+
+<h3>4.2 我们发送给第三方AI服务的具体数据</h3>
+<p>以下是每次使用AI功能时，我们向阿里云DashScope发送的数据明细：</p>
+
+<table class="data-table">
+  <tr>
+    <th style="width:18%">数据类型</th>
+    <th style="width:22%">触发场景</th>
+    <th style="width:35%">具体内容</th>
+    <th style="width:25%">用途</th>
+  </tr>
+  <tr>
+    <td>💬 文字消息</td>
+    <td>您在对话框输入问题并提交时</td>
+    <td>您输入的学习问题文字内容、历史对话记录（用于上下文理解）</td>
+    <td>AI大语言模型生成回答或教学内容</td>
+  </tr>
+  <tr>
+    <td>📷 图片/照片</td>
+    <td>您使用"拍照解题"功能时</td>
+    <td>您拍摄或从相册选择的题目照片（图片原始字节，经base64编码传输）</td>
+    <td>AI视觉识别模型识别题目文字、公式、图形并解答</td>
+  </tr>
+  <tr>
+    <td>🎤 语音录音</td>
+    <td>您使用"语音输入"功能时</td>
+    <td>您录制的音频文件（录音期间的声音数据）</td>
+    <td>AI语音识别模型将语音转写为文字</td>
+  </tr>
+  <tr>
+    <td>📚 学习偏好</td>
+    <td>每次调用AI接口时</td>
+    <td>您当前选择的年级（小学/初中/高中）和学科（语文/数学/英语等）</td>
+    <td>帮助AI调整教学内容的难度和风格适配</td>
+  </tr>
+</table>
+
+<h3>4.3 数据的使用限制</h3>
 <ul>
-  <li><strong>阿里云DashScope</strong>：提供大语言模型、视觉识别、语音合成等AI能力。隐私政策：<a href="https://help.aliyun.com/document_detail/dashscope/agreements.html">https://help.aliyun.com</a></li>
-  <li><strong>微信支付</strong>：提供积分购买支付服务（如已接入）。隐私政策：<a href="https://weixin.qq.com/cgi-bin/readtemplate?t=weixin_agreement&s=privacy">https://weixin.qq.com</a></li>
+  <li>✅ 发送给阿里云DashScope的数据<strong>仅用于实时处理</strong>——生成AI回答、识别题目内容、转写语音文字。</li>
+  <li>✅ 我们<strong>不会</strong>将您的对话内容、照片、录音保存到自己的服务器上。</li>
+  <li>✅ 我们<strong>不会</strong>将您的个人数据用于广告投放、用户画像或任何其他商业目的。</li>
+  <li>✅ 数据通过<strong>加密通道（HTTPS）</strong>传输，防止传输过程中被窃取。</li>
+  <li>⚠️ 阿里云DashScope作为数据处理方，可能根据其自身的隐私政策对数据进行处理。我们建议您阅读其<a href="https://help.aliyun.com/document_detail/dashscope/agreements.html">隐私政策</a>了解详情。</li>
 </ul>
 
-<h2>五、您的权利</h2>
+<h3>4.4 用户同意机制</h3>
+<ul>
+  <li>在您<strong>首次使用本应用</strong>时，我们会以全屏弹窗的形式向您展示以上所有信息，包括发送的数据类型、数据接收方和数据用途。</li>
+  <li>您必须点击<strong>"我已了解，同意并继续"</strong>按钮后才能开始使用AI功能。</li>
+  <li>如果您不同意，将无法使用本应用的AI核心功能（问答、讲课、拍照识别、语音输入）。</li>
+  <li>您可以随时通过<strong>卸载本应用</strong>的方式停止使用我们的服务和数据共享。</li>
+</ul>
+
+<h2>五、其他第三方服务</h2>
+<p>除上述AI服务外，本应用还可能使用以下第三方服务：</p>
+<ul>
+  <li><strong>苹果公司（Apple Inc.）</strong>：App Store 应用内购买（IAP）系统，用于处理积分购买支付。Apple 的数据处理遵循其隐私政策：<a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+  <li><strong>火山引擎（字节跳动旗下）</strong>：可选的AI生图/AI视频生成能力（如未来版本启用）。隐私政策：<a href="https://www.volcengine.com/docs/6791/1339025">火山引擎隐私政策</a></li>
+</ul>
+
+<h2>六、您的权利</h2>
 <ul>
   <li>您可以随时在应用内查看积分余额和使用记录。</li>
-  <li>您可以随时关闭相机、麦克风权限（在系统设置中）。</li>
+  <li>您可以随时关闭相机、麦克风权限（在系统设置中操作）。</li>
   <li>卸载本应用将清除所有本地存储的个人数据。</li>
+  <li>如您对第三方AI服务商的数据处理有任何疑问，可直接联系该服务商查阅其隐私政策。</li>
 </ul>
 
-<h2>六、联系我们</h2>
+<h2>七、联系我们</h2>
 <p>如对本隐私政策有任何疑问或建议，请通过以下方式联系我们：</p>
 <ul>
   <li><strong>公司名称</strong>：郑州市惠琴软件开发有限公司</li>
-  <li><strong>联系邮箱</strong>：chenhuiming@wnzgai.com</li>
+  <li><strong>统一社会信用代码</strong>：91410100MAKERWB43C</li>
+  <li><strong>联系邮箱</strong>：<a href="mailto:chenhuiming@wnzgai.com">chenhuiming@wnzgai.com</a></li>
   <li><strong>联系电话</strong>：16696203318</li>
   <li><strong>官方网站</strong>：<a href="https://www.wnzgai.com">https://www.wnzgai.com</a></li>
 </ul>
